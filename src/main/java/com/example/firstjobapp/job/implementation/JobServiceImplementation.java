@@ -9,7 +9,7 @@ import com.example.firstjobapp.job.dto.createJobRequestDto;
 import com.example.firstjobapp.job.dto.userResponseDTO;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
+import com.example.firstjobapp.job.dto.LocationCount;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -102,5 +102,25 @@ public class JobServiceImplementation implements JobService {
     @Override
     public List<Job> findjobswithSorting(String field) {
         return jobRepository.findAll(Sort.by(Sort.Direction.DESC,field));
+    }
+
+    @Override
+    public List<Job> findJobsByLocation(String location) {
+        return jobRepository.findByLocation(location);
+    }
+
+    @Override
+    public List<Job> findJobsByMinSalaryGreaterThan(Integer salary) {
+        return jobRepository.findByMinSalaryGreaterThan(salary);
+    }
+
+    @Override
+    public List<Job> searchJobs(String query) {
+        return jobRepository.searchJobs(query);
+    }
+
+    @Override
+    public List<LocationCount> getLocationCounts() {
+        return jobRepository.getLocationCounts();
     }
 }

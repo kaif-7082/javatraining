@@ -1,5 +1,6 @@
 package com.example.firstjobapp.job;
 
+import com.example.firstjobapp.job.dto.LocationCount;
 import com.example.firstjobapp.job.dto.createJobRequestDto;
 import com.example.firstjobapp.job.dto.userResponseDTO;
 import jakarta.validation.Valid;
@@ -62,5 +63,26 @@ public class JobController {
         if (updated)
             return new ResponseEntity<>("Job updated", HttpStatus.OK);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+    @GetMapping("/location/{location}")
+    public ResponseEntity<List<Job>> findJobsByLocation(@PathVariable String location) {
+        List<Job> jobs = jobService.findJobsByLocation(location);
+        return ResponseEntity.ok(jobs);
+    }
+    @GetMapping("/salary")
+    public ResponseEntity<List<Job>> findJobsByMinSalaryGreaterThan(@RequestParam Integer min) {
+        List<Job> jobs = jobService.findJobsByMinSalaryGreaterThan(min);
+        return ResponseEntity.ok(jobs);
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<Job>> searchJobs(@RequestParam String query) {
+        List<Job> jobs = jobService.searchJobs(query);
+        return ResponseEntity.ok(jobs);
+    }
+    @GetMapping("/stats/location-counts")
+    public ResponseEntity<List<LocationCount>> getLocationCounts() {
+        List<LocationCount> stats = jobService.getLocationCounts();
+        return ResponseEntity.ok(stats);
     }
 }
