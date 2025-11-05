@@ -32,6 +32,9 @@ public class CompanyServiceImplementation implements CompanyService {
             dto.setId(company.getId());
             dto.setName(company.getName());
             dto.setDescription(company.getDescription());
+            dto.setCeo(company.getCeo());
+            dto.setFoundedYear(company.getFoundedYear());
+
             responseDtos.add(dto);
         }
         return responseDtos;
@@ -44,6 +47,9 @@ public class CompanyServiceImplementation implements CompanyService {
             Company company = companyOptional.get();
             company.setName(companyDto.getName());
             company.setDescription(companyDto.getDescription());
+            company.setCeo(companyDto.getCeo());
+            company.setFoundedYear(companyDto.getFoundedYear());
+
             companyRepository.save(company);
             return true;
         }
@@ -56,6 +62,8 @@ public class CompanyServiceImplementation implements CompanyService {
         Company company = new Company();
         company.setName(companyDto.getName());
         company.setDescription(companyDto.getDescription());
+        company.setCeo(companyDto.getCeo());
+        company.setFoundedYear(companyDto.getFoundedYear());
         
 
         companyRepository.save(company);
@@ -80,4 +88,16 @@ public class CompanyServiceImplementation implements CompanyService {
     public List<Company> findCompaniesWithSorting(String field) {
         return companyRepository.findAll(Sort.by(Sort.Direction.DESC, field));
     }
+
+    @Override
+    public Company findCompanyByName(String name) {
+        return companyRepository.findByName(name);
+    }
+
+    @Override
+    public List<Company> searchCompanies(String query) {
+        return companyRepository.searchCompanies(query);
+    }
+
+
 }

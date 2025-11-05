@@ -22,4 +22,6 @@ public interface CompanyService {
 
 
     List<Company> findCompaniesWithSorting(String field);
+    Company findCompanyByName(String name);
+    List<Company> searchCompanies(String query);
 }

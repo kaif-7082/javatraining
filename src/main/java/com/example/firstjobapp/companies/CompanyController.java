@@ -66,4 +66,20 @@ public class CompanyController {
         List<Company> sortedCompanies = companyService.findCompaniesWithSorting(field);
         return ResponseEntity.ok(sortedCompanies);
     }
+
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Company> findCompanyByName(@PathVariable String name) {
+        Company company = companyService.findCompanyByName(name);
+        if (company != null) {
+            return new ResponseEntity<>(company, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    // ADDED: Endpoint for the JPQL search query
+    @GetMapping("/search")
+    public ResponseEntity<List<Company>> searchCompanies(@RequestParam String query) {
+        List<Company> companies = companyService.searchCompanies(query);
+        return ResponseEntity.ok(companies);
+    }
 }

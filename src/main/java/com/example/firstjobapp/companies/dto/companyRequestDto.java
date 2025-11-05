@@ -10,6 +10,11 @@ public class companyRequestDto {
     @NotEmpty(message = "Company description cannot be empty")
     private String description;
 
+    @NotEmpty(message = "CEO name cannot be empty")
+    private String ceo;
+
+    private Integer foundedYear;
+
 
     public String getName() {
         return name;
@@ -25,5 +30,21 @@ public class companyRequestDto {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCeo() {
+        return ceo;
+    }
+
+    public void setCeo(String ceo) {
+        this.ceo = ceo;
+    }
+
+    public Integer getFoundedYear() {
+        return foundedYear;
+    }
+
+    public void setFoundedYear(Integer foundedYear) {
+        this.foundedYear = foundedYear;
     }
 }

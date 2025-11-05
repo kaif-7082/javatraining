@@ -11,6 +11,8 @@ public class Company {
     private Long id;
     private String name;
     private String description;
+    private String ceo;
+    private Integer foundedYear;
 
 
     @OneToMany(mappedBy ="company")//one company have many jobs
@@ -49,5 +51,20 @@ public class Company {
 
     public void setJobs(List<Job> jobs) {
         this.jobs = jobs;
+    }
+    public String getCeo() {
+        return ceo;
+    }
+
+    public void setCeo(String ceo) {
+        this.ceo = ceo;
+    }
+
+    public Integer getFoundedYear() {
+        return foundedYear;
+    }
+
+    public void setFoundedYear(Integer foundedYear) {
+        this.foundedYear = foundedYear;
     }
 }
