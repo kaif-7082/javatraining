@@ -14,4 +14,6 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
             "OR c.description LIKE %:query% " +
             "OR c.ceo LIKE %:query%")
     List<Company> searchCompanies(@Param("query") String query);
+
+    List<Company> findByFoundedYear(Integer year);
 }

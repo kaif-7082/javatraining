@@ -5,6 +5,9 @@ import com.example.firstjobapp.companies.CompanyRepository;
 import com.example.firstjobapp.companies.CompanyService;
 import com.example.firstjobapp.companies.dto.companyRequestDto;
 import com.example.firstjobapp.companies.dto.companyResponseDto;
+import com.example.firstjobapp.job.Job;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -99,5 +102,14 @@ public class CompanyServiceImplementation implements CompanyService {
         return companyRepository.searchCompanies(query);
     }
 
+    @Override
+    public List<Company> findCompaniesByFoundedYear(Integer year) {
+        return companyRepository.findByFoundedYear(year);
+    }
 
+    @Override
+    public Page<Company> findCompanyWithPagination(int page, int pageSize) {
+        Page<Company> jobs=companyRepository.findAll(PageRequest.of(page, pageSize));
+        return jobs;
+    }
 }

@@ -2,7 +2,9 @@ package com.example.firstjobapp.companies;
 
 import com.example.firstjobapp.companies.dto.companyRequestDto;
 import com.example.firstjobapp.companies.dto.companyResponseDto;
+import com.example.firstjobapp.job.Job;
 import jakarta.validation.Valid; // ADD
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -76,10 +78,22 @@ public class CompanyController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    // ADDED: Endpoint for the JPQL search query
+
     @GetMapping("/search")
     public ResponseEntity<List<Company>> searchCompanies(@RequestParam String query) {
         List<Company> companies = companyService.searchCompanies(query);
+        return ResponseEntity.ok(companies);
+    }
+
+    @GetMapping("/filterByYear/{year}")
+    public ResponseEntity<List<Company>> getCompaniesByYear(@PathVariable Integer year) {
+        List<Company> companies = companyService.findCompaniesByFoundedYear(year);
+        return ResponseEntity.ok(companies);
+    }
+
+    @GetMapping("/pagination/{page}/{pageSize}")
+    public ResponseEntity<Page<Company>> getJobsWithPagination(@PathVariable int page, @PathVariable int pageSize) {
+        Page<Company> companies = companyService.findCompanyWithPagination(page, pageSize);
         return ResponseEntity.ok(companies);
     }
 }
