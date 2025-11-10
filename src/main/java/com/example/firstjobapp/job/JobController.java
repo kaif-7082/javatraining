@@ -1,6 +1,5 @@
 package com.example.firstjobapp.job;
 
-import com.example.firstjobapp.job.dto.LocationCount;
 import com.example.firstjobapp.job.dto.createJobRequestDto;
 import com.example.firstjobapp.job.dto.userResponseDTO;
 import jakarta.validation.Valid;
@@ -14,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/jobs")
+@RequestMapping("/companies/{companyId}/jobs")
 public class JobController {
 
     private JobService jobService;
@@ -25,93 +24,89 @@ public class JobController {
 
 
     @GetMapping
-    public ResponseEntity<List<userResponseDTO>> findAll() {
-        log.info("GET /jobs - Request to get all jobs");
-        return ResponseEntity.ok(jobService.findAll());
+    public ResponseEntity<List<userResponseDTO>> findAll(@PathVariable Long companyId) {
+        log.info("GET /companies/{}/jobs", companyId);
+        return ResponseEntity.ok(jobService.findAll(companyId));
     }
 
 
     @GetMapping("/sorted/{field}")
-    public ResponseEntity<List<Job>> findSortedJobs(@PathVariable String field) {
-        log.info("GET /jobs/sorted/{} - Request to get sorted jobs", field);
-        List<Job> sortedJobs = jobService.findjobswithSorting(field);
+    public ResponseEntity<List<Job>> findSortedJobs(@PathVariable Long companyId, @PathVariable String field) {
+        log.info("GET /companies/{}/jobs/sorted/{}", companyId, field);
+        List<Job> sortedJobs = jobService.findjobswithSorting(companyId, field);
         return ResponseEntity.ok(sortedJobs);
     }
 
 
     @PostMapping
-    public ResponseEntity<String> createJob(@Valid @RequestBody createJobRequestDto createRequest) {
-        log.info("POST /jobs - Request to create new job: {}", createRequest.getTitle());
-        jobService.createJob(createRequest);
-        log.info("POST /jobs - Job created successfully: {}", createRequest.getTitle());
+    public ResponseEntity<String> createJob(@PathVariable Long companyId, @Valid @RequestBody createJobRequestDto createRequest) {
+        log.info("POST /companies/{}/jobs - Request to create new job: {}", companyId, createRequest.getTitle());
+        jobService.createJob(companyId, createRequest);
+        log.info("POST /companies/{}/jobs - Job created successfully", companyId);
         return new ResponseEntity<>("Job created", HttpStatus.CREATED);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Job> findJobById(@PathVariable Long id) {
-        log.info("GET /jobs/{} - Request to get job by id", id);
-        Job job = jobService.getJobById(id);
-        if (job != null)
-            return new ResponseEntity<>(job, HttpStatus.OK);
+    @GetMapping("/{jobId}")
+    public ResponseEntity<userResponseDTO> findJobById(@PathVariable Long companyId, @PathVariable Long jobId) {
+        log.info("GET /companies/{}/jobs/{} - Request to get job by id", companyId, jobId);
+        userResponseDTO jobDto = jobService.getJobById(companyId, jobId);
+        if (jobDto != null)
+            return new ResponseEntity<>(jobDto, HttpStatus.OK);
 
-        log.warn("GET /jobs/{} - Job not found", id);
+        log.warn("GET /companies/{}/jobs/{} - Job not found", companyId, jobId);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteJobById(@PathVariable Long id) {
-        log.info("DELETE /jobs/{} - Request to delete job", id);
-        boolean deleted = jobService.deleteJobById(id);
+    @DeleteMapping("/{jobId}")
+    public ResponseEntity<String> deleteJobById(@PathVariable Long companyId, @PathVariable Long jobId) {
+        log.info("DELETE /companies/{}/jobs/{} - Request to delete job", companyId, jobId);
+        boolean deleted = jobService.deleteJobById(companyId, jobId);
         if (deleted) {
-            log.info("DELETE /jobs/{} - Job deleted successfully", id);
+            log.info("DELETE /companies/{}/jobs/{} - Job deleted successfully", companyId, jobId);
             return new ResponseEntity<>("Job deleted", HttpStatus.OK);
         }
-        log.warn("DELETE /jobs/{} - Job not found", id);
+        log.warn("DELETE /companies/{}/jobs/{} - Job not found", companyId, jobId);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
 
-    @PutMapping("/{id}")
-    public ResponseEntity<String> updateJob(@PathVariable Long id, @Valid @RequestBody createJobRequestDto updatedJob) {
-        log.info("PUT /jobs/{} - Request to update job", id);
-        boolean updated = jobService.updateJob(id, updatedJob);
+    @PutMapping("/{jobId}")
+    public ResponseEntity<String> updateJob(@PathVariable Long companyId, @PathVariable Long jobId, @Valid @RequestBody createJobRequestDto updatedJob) {
+        log.info("PUT /companies/{}/jobs/{} - Request to update job", companyId, jobId);
+        boolean updated = jobService.updateJob(companyId, jobId, updatedJob);
         if (updated) {
-            log.info("PUT /jobs/{} - Job updated successfully", id);
+            log.info("PUT /companies/{}/jobs/{} - Job updated successfully", companyId, jobId);
             return new ResponseEntity<>("Job updated", HttpStatus.OK);
         }
-        log.warn("PUT /jobs/{} - Job not found", id);
+        log.warn("PUT /companies/{}/jobs/{} - Job not found", companyId, jobId);
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
     @GetMapping("/location/{location}")
-    public ResponseEntity<List<Job>> findJobsByLocation(@PathVariable String location) {
-        log.info("GET /jobs/location/{} - Request to find jobs by location", location);
-        List<Job> jobs = jobService.findJobsByLocation(location);
+    public ResponseEntity<List<Job>> findJobsByLocation(@PathVariable Long companyId, @PathVariable String location) {
+        log.info("GET /companies/{}/jobs/location/{} - Request to find jobs by location", companyId, location);
+        List<Job> jobs = jobService.findJobsByLocation(companyId, location);
         return ResponseEntity.ok(jobs);
     }
+
     @GetMapping("/salary")
-    public ResponseEntity<List<Job>> findJobsByMinSalaryGreaterThan(@RequestParam Integer min) {
-        log.info("GET /jobs/salary - Request to find jobs by min salary > {}", min);
-        List<Job> jobs = jobService.findJobsByMinSalaryGreaterThan(min);
+    public ResponseEntity<List<Job>> findJobsByMinSalaryGreaterThan(@PathVariable Long companyId, @RequestParam Integer min) {
+        log.info("GET /companies/{}/jobs/salary - Request to find jobs by min salary > {}", companyId, min);
+        List<Job> jobs = jobService.findJobsByMinSalaryGreaterThan(companyId, min);
         return ResponseEntity.ok(jobs);
     }
 
     @GetMapping("/search")
-    public ResponseEntity<List<Job>> searchJobs(@RequestParam String query) {
-        log.info("GET /jobs/search - Request to search jobs with query: {}", query);
-        List<Job> jobs = jobService.searchJobs(query);
+    public ResponseEntity<List<Job>> searchJobs(@PathVariable Long companyId, @RequestParam String query) {
+        log.info("GET /companies/{}/jobs/search - Request to search jobs with query: {}", companyId, query);
+        List<Job> jobs = jobService.searchJobs(companyId, query);
         return ResponseEntity.ok(jobs);
-    }
-    @GetMapping("/stats/location-counts")
-    public ResponseEntity<List<LocationCount>> getLocationCounts() {
-        log.info("GET /jobs/stats/location-counts - Request to get location stats");
-        List<LocationCount> stats = jobService.getLocationCounts();
-        return ResponseEntity.ok(stats);
     }
 
     @GetMapping("/pagination/{page}/{pageSize}")
-    public ResponseEntity<Page<Job>> getJobsWithPagination(@PathVariable int page, @PathVariable int pageSize) {
-        log.info("GET /jobs/pagination/{}/{} - Request to get paginated jobs", page, pageSize);
-        Page<Job> jobs = jobService.findJobsWithPagination(page, pageSize);
+    public ResponseEntity<Page<Job>> getJobsWithPagination(@PathVariable Long companyId, @PathVariable int page, @PathVariable int pageSize) {
+        log.info("GET /companies/{}/jobs/pagination/{}/{} - Request to get paginated jobs", companyId, page, pageSize);
+        Page<Job> jobs = jobService.findJobsWithPagination(companyId, page, pageSize);
         return ResponseEntity.ok(jobs);
     }
 

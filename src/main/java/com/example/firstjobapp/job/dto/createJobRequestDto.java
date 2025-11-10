@@ -1,7 +1,7 @@
 package com.example.firstjobapp.job.dto;
 
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull; // IMPORT ADDED
+
 
 public class createJobRequestDto {
 
@@ -19,16 +19,7 @@ public class createJobRequestDto {
     private String location;
 
 
-    @NotNull(message = "Company ID cannot be null")
-    private Long companyId;
 
-    public Long getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Long companyId) {
-        this.companyId = companyId;
-    }
 
     public String getTitle() {
         return title;

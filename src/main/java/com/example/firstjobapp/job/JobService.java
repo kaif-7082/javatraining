@@ -10,28 +10,27 @@ import java.util.List;
 public interface JobService {
 
 
-    List<userResponseDTO> findAll();
 
+    List<userResponseDTO> findAll(Long companyId);
 
-    void createJob(createJobRequestDto createRequest);
+    void createJob(Long companyId, createJobRequestDto createRequest);
 
-    Job getJobById(Long id);
+    userResponseDTO getJobById(Long companyId, Long jobId);
 
-    boolean deleteJobById(Long id);
+    boolean deleteJobById(Long companyId, Long jobId);
 
+    boolean updateJob(Long companyId, Long jobId, createJobRequestDto updatedJob);
 
-    boolean updateJob(Long id, createJobRequestDto updatedJob);
+    List<Job> findjobswithSorting(Long companyId, String field);
 
+    List<Job> findJobsByLocation(Long companyId, String location);
 
-    List<Job> findjobswithSorting(String field);
+    List<Job> findJobsByMinSalaryGreaterThan(Long companyId, Integer salary);
 
-    List<Job> findJobsByLocation(String location);
+    List<Job> searchJobs(Long companyId, String query);
 
-    List<Job> findJobsByMinSalaryGreaterThan(Integer salary);
+    Page<Job> findJobsWithPagination(Long companyId, int page, int pageSize);
 
-    List<Job> searchJobs(String query);
 
     List<LocationCount> getLocationCounts();
-
-    Page<Job> findJobsWithPagination(int page, int pageSize);
 }
