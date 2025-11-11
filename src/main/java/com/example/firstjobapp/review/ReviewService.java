@@ -16,4 +16,9 @@ public interface ReviewService {
     boolean updateReview(Long companyId, Long reviewId, reviewRequestDto reviewDto);
 
     boolean deleteReview(Long companyId, Long reviewId);
+
+    Page<reviewResponseDto> getReviewsPaginated(Long companyId, int page, int pageSize);
+    List<reviewResponseDto> getReviewsSorted(Long companyId, String field);
+    List<reviewResponseDto> getReviewsByRatingGreaterThan(Long companyId, double minRating);
+    Double getAverageRating(Long companyId);
 }

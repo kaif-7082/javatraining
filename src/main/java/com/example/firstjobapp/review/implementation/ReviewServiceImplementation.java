@@ -130,6 +130,46 @@ public class ReviewServiceImplementation implements ReviewService {
         return true;
     }
 
+
+    @Override
+    public Page<reviewResponseDto> getReviewsPaginated(Long companyId, int page, int pageSize) {
+        log.info("Finding reviews with pagination for company {} - page: {}, pageSize: {}", companyId, page, pageSize);
+        Pageable pageable = PageRequest.of(page, pageSize);
+        Page<Review> reviewPage = reviewRepository.findByCompanyId(companyId, pageable);
+        return reviewPage.map(this::mapToDto);
+    }
+
+    @Override
+    public List<reviewResponseDto> getReviewsSorted(Long companyId, String field) {
+        log.info("Finding reviews for company {} with sorting on field: {}", companyId, field);
+        Sort sort = Sort.by(Sort.Direction.DESC, field);
+        List<Review> reviews = reviewRepository.findByCompanyId(companyId, sort);
+        return reviews.stream()
+                .map(this::mapToDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<reviewResponseDto> getReviewsByRatingGreaterThan(Long companyId, double minRating) {
+        log.info("Finding reviews for company {} with rating greater than: {}", companyId, minRating);
+        List<Review> reviews = reviewRepository.findByCompanyIdAndRatingGreaterThan(companyId, minRating);
+        return reviews.stream()
+                .map(this::mapToDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public Double getAverageRating(Long companyId) {
+        log.info("Calculating average rating for company: {}", companyId);
+        Double avgRating = reviewRepository.findAverageRatingByCompanyId(companyId);
+        if (avgRating == null) {
+            log.warn("No ratings found for company: {}", companyId);
+            return 0.0;
+        }
+        log.info("Average rating for company {} is: {}", companyId, avgRating);
+        return avgRating;
+    }
+
     private reviewResponseDto mapToDto(Review review) {
         reviewResponseDto dto = new reviewResponseDto();
         dto.setId(review.getId());
