@@ -19,7 +19,7 @@ public class Company {
     // Added fields from monolith
     private String ceo;
     private Integer foundedYear;
-
+    private Double rating;
     // Note: List<Job> and List<Review> are intentionally removed.
     // This entity is only responsible for company data.
     @Lob // Tells JPA this can be a large object

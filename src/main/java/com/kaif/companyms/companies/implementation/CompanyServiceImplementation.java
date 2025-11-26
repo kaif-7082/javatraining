@@ -49,13 +49,25 @@ public class CompanyServiceImplementation implements CompanyService {
     public boolean updateCompany(companyRequestDto companyDto, Long id) {
         log.info("Attempting to update company with id: {}", id);
         Optional<Company> companyOptional = companyRepository.findById(id);
+
         if (companyOptional.isPresent()) {
             Company company = companyOptional.get();
-            mapToEntity(companyDto, company); // Use helper
+
+
+            // Check if the name is being changed AND if the new name already exists
+            if (!company.getName().equals(companyDto.getName()) &&
+                    companyRepository.existsByName(companyDto.getName())) {
+
+                throw new IllegalArgumentException("Company with name '" + companyDto.getName() + "' already exists!");
+            }
+
+
+            mapToEntity(companyDto, company);
             companyRepository.save(company);
             log.info("Successfully updated company with id: {}", id);
             return true;
         }
+
         log.warn("Failed to update. Company not found with id: {}", id);
         return false;
     }
