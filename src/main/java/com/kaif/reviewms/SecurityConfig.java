@@ -30,9 +30,13 @@ public class SecurityConfig {
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorizeRequests ->
-                authorizeRequests.requestMatchers("/h2-console/**").permitAll()
+                authorizeRequests
+                        .requestMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/actuator/**").permitAll() // Good practice
+                        .requestMatchers("/error").permitAll()
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
+                        .requestMatchers("/reviews/stats/average-rating").permitAll()
                         .anyRequest().authenticated());
-
         http.sessionManagement(
                 session ->
                         session.sessionCreationPolicy(

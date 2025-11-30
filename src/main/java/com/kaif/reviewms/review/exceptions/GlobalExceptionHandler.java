@@ -29,4 +29,10 @@ public class GlobalExceptionHandler {
         log.error("Validation error occurred: {}", errors);
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler(CompanyNotFoundException.class)
+    public ResponseEntity<String> handleCompanyNotFoundException(CompanyNotFoundException ex) {
+        // Return 404 explicitly with the message
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }

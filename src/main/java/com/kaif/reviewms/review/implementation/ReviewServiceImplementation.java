@@ -3,9 +3,11 @@ package com.kaif.reviewms.review.implementation;
 import com.kaif.reviewms.review.Review;
 import com.kaif.reviewms.review.ReviewRepository;
 import com.kaif.reviewms.review.ReviewService;
+import com.kaif.reviewms.review.dto.ReviewMessage;
 import com.kaif.reviewms.review.dto.ReviewRequestDto;
 import com.kaif.reviewms.review.dto.ReviewResponseDto;
 import com.kaif.reviewms.review.exceptions.CompanyNotFoundException;
+import com.kaif.reviewms.review.messaging.ReviewMessageProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import com.kaif.reviewms.review.clients.CompanyClient;
@@ -30,6 +33,9 @@ public class ReviewServiceImplementation implements ReviewService {
 
     @Autowired
     private CompanyClient companyClient;
+
+    @Autowired
+    private ReviewMessageProducer reviewMessageProducer;
 
     public ReviewServiceImplementation(ReviewRepository reviewRepository, CompanyClient companyClient) {
         this.reviewRepository = reviewRepository;
@@ -54,6 +60,7 @@ public class ReviewServiceImplementation implements ReviewService {
     }
 
     @Override
+
     public boolean createReview(ReviewRequestDto reviewDto) {
         log.info("Attempting to create review for company: {}", reviewDto.getCompanyId());
 
@@ -72,6 +79,13 @@ public class ReviewServiceImplementation implements ReviewService {
         // If validation passes, create the review
         Review review = mapToEntity(reviewDto);
         reviewRepository.save(review);
+        ReviewMessage message = new ReviewMessage();
+        message.setId(review.getId());
+        message.setCompanyId(review.getCompanyId());
+        message.setRating(review.getRating());
+        message.setDescription(review.getDescription());
+
+        reviewMessageProducer.sendMessage(message);
         log.info("Review created successfully with id: {}", review.getId());
         return true;
     }
