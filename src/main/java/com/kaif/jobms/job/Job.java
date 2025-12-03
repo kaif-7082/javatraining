@@ -15,7 +15,6 @@ public class Job {
     private Long id;
     private String title;
     private String description;
-    // Changed to Integer to match monolith and support salary-based queries
     private Integer minSalary;
     private Integer maxSalary;
     private String location;

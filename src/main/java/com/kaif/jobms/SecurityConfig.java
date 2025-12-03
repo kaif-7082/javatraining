@@ -52,8 +52,8 @@ public class SecurityConfig {
 
         http.csrf(csrf -> csrf.disable());
 
-        // This is the most important line:
-        // It tells Spring to use your filter to check for tokens
+
+        // It tells Spring to use the filter to check for tokens
         http.addFilterBefore(authenticationJwtTokenFilter(),
                 UsernamePasswordAuthenticationFilter.class);
 
