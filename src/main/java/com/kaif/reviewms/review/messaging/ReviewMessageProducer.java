@@ -3,6 +3,7 @@ package com.kaif.reviewms.review.messaging;
 import com.kaif.reviewms.review.dto.ReviewMessage;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
 
 @Service
 public class ReviewMessageProducer {
@@ -12,9 +13,10 @@ public class ReviewMessageProducer {
     public ReviewMessageProducer(KafkaTemplate<String, ReviewMessage> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
+    @Value("${spring.kafka.topic.name}")
+    private String topicName;
 
     public void sendMessage(ReviewMessage message) {
-        // Topic name: companyRatingQueue
-        kafkaTemplate.send("companyRatingQueue", message);
-    }
+
+        kafkaTemplate.send(topicName, message);    }
 }
