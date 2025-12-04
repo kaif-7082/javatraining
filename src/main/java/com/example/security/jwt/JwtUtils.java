@@ -28,32 +28,30 @@ public class JwtUtils {
 
     public String getJwtFromHeader(HttpServletRequest request) {
         String bearerToken = request.getHeader("Authorization");
-        logger.debug("Authorization Header: {}", bearerToken);
         if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
-            return bearerToken.substring(7); // Remove Bearer prefix
+            return bearerToken.substring(7);
         }
         return null;
     }
 
     public String generateToken(UserDetails userDetails) {
         String username = userDetails.getUsername();
-
-        // 1. Get the roles
         List<String> roles = userDetails.getAuthorities().stream()
                 .map(item -> item.getAuthority())
                 .collect(Collectors.toList());
 
-        // 2. Build the token with roles as a "claim"
         return Jwts.builder()
                 .subject(username)
-                .claim("roles", roles) // <-- ADD THIS LINE
+                .claim("roles", roles)
                 .issuedAt(new Date())
                 .expiration(new Date((new Date()).getTime() + jwtExpirationMs))
                 .signWith(key())
                 .compact();
     }
+
     public String getUserNameFromJwtToken(String token) {
-        return getAllClaims(token).getSubject();
+        return Jwts.parser().verifyWith((SecretKey) key()).build()
+                .parseSignedClaims(token).getPayload().getSubject();
     }
 
     private Key key() {
@@ -62,29 +60,18 @@ public class JwtUtils {
 
     public boolean validateJwtToken(String authToken) {
         try {
-            System.out.println("Validate");
             Jwts.parser().verifyWith((SecretKey) key()).build().parseSignedClaims(authToken);
             return true;
         } catch (MalformedJwtException e) {
             logger.error("Invalid JWT token: {}", e.getMessage());
         } catch (ExpiredJwtException e) {
-            logger.error("JWT token is expired: {}", e.getMessage());
+            // Re-throw for Filter
+            throw e;
         } catch (UnsupportedJwtException e) {
             logger.error("JWT token is unsupported: {}", e.getMessage());
         } catch (IllegalArgumentException e) {
             logger.error("JWT claims string is empty: {}", e.getMessage());
         }
         return false;
-    }
-
-    public List<String> getRolesFromToken(String token) {
-        return getAllClaims(token).get("roles", List.class);
-    }
-    private Claims getAllClaims(String token) {
-        return Jwts.parser()
-                .verifyWith((SecretKey) key())
-                .build()
-                .parseSignedClaims(token)
-                .getPayload();
     }
 }

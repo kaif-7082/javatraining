@@ -78,11 +78,10 @@ public class SecurityConfig {
 
     @Bean
     public CommandLineRunner initData(UserDetailsService userDetailsService) {
-        // This casting is why we know the bean is a JdbcUserDetailsManager
+
         JdbcUserDetailsManager manager = (JdbcUserDetailsManager) userDetailsService;
 
-        // This logic can stay, but it might fail if you restart (users already exist)
-        // You can wrap it in an `if (!manager.userExists("user1")) { ... }`
+
         if (!manager.userExists("user1")) {
             UserDetails user1 = User.withUsername("user1")
                     .password(passwordEncoder().encode("password1"))
@@ -99,7 +98,6 @@ public class SecurityConfig {
         }
 
         return args -> {
-            // We can leave this empty since we did the logic above
         };
     }
 
