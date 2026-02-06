@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7cceeeba-9cc5-47ff-af1b-d2ea6d529823" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/salaryandtaxanalyzer(assignment1).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/java/com/salaryandtax/analyzer/AnalyzerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/java/com/salaryandtax/analyzer/controller/SalaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/java/com/salaryandtax/analyzer/model/SalaryRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/java/com/salaryandtax/analyzer/repository/SalaryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/java/com/salaryandtax/analyzer/service/SalaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/src/test/java/com/salaryandtax/analyzer/AnalyzerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/Collectionsdemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/abs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/boundedgenerics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/carrental.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/constructors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/exceptionhandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/functionalinterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/generics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/inheritence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/iterators.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/java training.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/methodoverloading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/methodoverriding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/object.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Box.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Box1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Collectionsdemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Rental.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/abs$animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/abs$deer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/abs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/boundedgenerics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/carrental.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/constructors$Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/constructors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/exceptionhandling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/functionalinterface$Print.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/functionalinterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/generics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/inheritence$animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/inheritence$zebra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/inheritence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/iterators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/java training.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/methodoverloading$cost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/methodoverloading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/methodoverriding$h1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/methodoverriding$h2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/methodoverriding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/object$car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_practical/out/production/java training/object.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/CompanyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/CompanyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/CompanyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/dto/companyRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/dto/companyResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/companies/implementation/CompanyServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/JobRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/LocationStatsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/dto/LocationCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/dto/createJobRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/dto/userResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/job/implementation/JobServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/ReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/dto/reviewRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/dto/reviewResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/java/com/example/firstjobapp/review/implementation/ReviewServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobapp_monolith_project/src/test/java/com/example/firstjobapp/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/src/main/java/com/kaif/gateway/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/apigateway/src/test/java/com/kaif/gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/application-config/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/application-config/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/application-config/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/architecture diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/CompanymsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/Exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/CompanyConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/CompanyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/CompanyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/CompanyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/clients/ReviewClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/dto/ReviewMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/dto/companyRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/dto/companyResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/implementation/CompanyServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/companies/messaging/ReviewMessageConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/jwt/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/java/com/kaif/companyms/jwt/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/test/java/com/kaif/companyms/CompanymsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/companymicroservice/src/test/java/com/kaif/companyms/companies/implementation/CompanyServiceImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/src/main/java/com/kaif/configserver/ConfigserverApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/configserver/src/test/java/com/kaif/configserver/ConfigserverApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/AsyncConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/Exception/CompanyNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/Exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/JobmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobNotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/clients/CompanyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/clients/FeignClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/dto/Compensation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/dto/JobDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/dto/JobDTOv2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/dto/LocationCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/dto/createJobRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/external/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/implementation/JobServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/job/mapper/JobMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/jwt/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/java/com/kaif/jobms/jwt/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/test/java/com/kaif/jobms/JobmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/jobmicroservice/src/test/java/com/kaif/jobms/job/implementation/JobServiceImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/ReviewmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/jwt/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/jwt/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/ReviewConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/ReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/clients/CompanyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/clients/FeignClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/dto/ReviewMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/dto/ReviewRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/dto/ReviewResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/exceptions/CompanyNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/exceptions/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/implementation/ReviewServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/java/com/kaif/reviewms/review/messaging/ReviewMessageProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/test/java/com/kaif/reviewms/ReviewmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/reviewmicroservice/src/test/java/com/kaif/reviewms/review/implementation/ReviewServiceImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/SecurityApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/AuthEntryPointJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/AuthTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/java/com/example/security/jwt/SignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/securitymicroservice/src/test/java/com/example/security/SecurityApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/src/main/java/com/kaif/servicereg/ServiceregApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice_project/serviceregistrymicroservice/src/test/java/com/kaif/servicereg/ServiceregApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/company er diagram.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/companydb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/student er diagram.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/student.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/MessagequeueApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/aop/LogExecution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/aop/UserAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/dto/UserActivityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment2/messagequeue/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment2/messagequeue/MessagequeueApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/SimplewebappApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/model/Clothing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/model/Electronics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/services/ProductFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/services/ProductNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/services/ProductOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/java/com/example/Simplewebapp/services/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week1and2_project/src/test/java/com/example/Simplewebapp/SimplewebappApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="39ID0qRrxNhwzkY42WMUc7lCmJ6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/P10/Desktop/assignment2-producer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.MessagequeueApplication">
+    <configuration name="AnalyzerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="analyzer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.salaryandtax.analyzer.AnalyzerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessagequeueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="messagequeue" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.assignment2.messagequeue.MessagequeueApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cceeeba-9cc5-47ff-af1b-d2ea6d529823" name="Changes" comment="" />
+      <created>1770374470572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770374470572</updated>
+      <workItem from="1770374471918" duration="777000" />
+      <workItem from="1770375356906" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
